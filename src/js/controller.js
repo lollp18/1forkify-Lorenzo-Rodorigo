@@ -171,6 +171,12 @@ addRecipeView.renderError(err.message)
 
 }}
 
+const newFeatures =function(){
+
+console.log('w')
+
+}
+
 const init= function(){
 bookmakrsView.addHandlerRender(controlBookmarks)
 recipeView.addHandlerRender(controlRecipe)
@@ -179,7 +185,7 @@ recipeView.addHandlerAddBookmark(controlAddBookmark)
 searchView.addHandlerSearch(controlSearchResult)
 paginationView.addHandlerClick(controlpagination)
 addRecipeView.addHandlerUploade(controladdRecipe)
-console.log('w')
+newFeatures()
 }
 
 init()
