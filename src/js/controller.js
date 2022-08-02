@@ -171,9 +171,9 @@ addRecipeView.renderError(err.message)
 
 }}
 
-const newFeatures =function(){
+const Alertforlanguagesearch=function(){
 
-console.log('w')
+alert('Bitte suchen Sie in Englisch nach Rezepten')
 
 }
 
@@ -185,9 +185,10 @@ recipeView.addHandlerAddBookmark(controlAddBookmark)
 searchView.addHandlerSearch(controlSearchResult)
 paginationView.addHandlerClick(controlpagination)
 addRecipeView.addHandlerUploade(controladdRecipe)
-newFeatures()
+
 }
 
 init()
+
 
 

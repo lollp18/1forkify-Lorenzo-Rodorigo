@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="src/sass/main.scss" />
     <script type="module" src="src/js/controller.js"></script>
 
-    <title>forkify // Search over 1,000,000 recipes</title>
+    <title>forkify // Suche über 1,000,000 Rezepte</title>
   </head>
 
   <body>
@@ -30,7 +30,7 @@
             <svg class="search__icon">
               <use href="src/img/icons.svg#icon-search"></use>
             </svg>
-            <span>Search</span>
+            <span>Suche</span>
           </button>
         </form>
 
@@ -41,7 +41,7 @@
                 <svg class="nav__icon">
                   <use href="src/img/icons.svg#icon-edit"></use>
                 </svg>
-                <span>Add recipe</span>
+                <span>Rezept hinzufügen</span>
               </button>
             </li>
             <li class="nav__item">
@@ -49,7 +49,7 @@
                 <svg class="nav__icon">
                   <use href="src/img/icons.svg#icon-bookmark"></use>
                 </svg>
-                <span>Bookmarks</span>
+                <span>Lesezeichen</span>
               </button>
               <div class="bookmarks">
                 <ul class="bookmarks__list">
@@ -60,7 +60,7 @@
                       </svg>
                     </div>
                     <p>
-                      No bookmarks yet. Find a nice recipe and bookmark it :)
+                      Noch keine Lesezeichen. Finden Sie ein schönes Rezept und setzen Sie ein Lesezeichen :)
                     </p>
                   </div>
 
@@ -84,9 +84,16 @@
         </nav>
       </header>
 
-      <div class="search-results">
+      <div class="search-results">       
         <ul class="results">
-          
+          <div class="message">
+            <div>
+              <svg>
+                <use href="src/img/icons.svg#icon-smile"></use>
+              </svg>
+            </div>
+            <p>Hir werden ihr Suchergebnisse aufgelistet</p>
+          </div>
           <!-- 
           <li class="preview">
             <a class="preview__link preview__link--active" href="#23456">
@@ -141,7 +148,7 @@
               <use href="src/img/icons.svg#icon-smile"></use>
             </svg>
           </div>
-          <p>Start by searching for a recipe or an ingredient. Have fun!</p>
+          <p>Beginnen Sie mit der Suche nach einem Rezept oder einer Zutat. Viel Spaß!</p>
         </div>
 
         <!-- <div class="spinner">
@@ -262,62 +269,62 @@
       <button class="btn--close-modal">&times;</button>
       <form class="upload">
         <div class="upload__column">
-          <h3 class="upload__heading">Recipe data</h3>
+          <h3 class="upload__heading">Rezeptdaten</h3>
           <label>Title</label>
-          <input value="TEST23" required name="title" type="text" />
-          <label>URL</label>
-          <input value="TEST23" required name="sourceUrl" type="text" />
-          <label>Image URL</label>
-          <input value="TEST23" required name="image" type="text" />
-          <label>Publisher</label>
-          <input value="TEST23" required name="publisher" type="text" />
-          <label>Prep time</label>
-          <input value="23" required name="cookingTime" type="number" />
-          <label>Servings</label>
-          <input value="23" required name="servings" type="number" />
+          <input  required name="title" type="text" />
+          <label>WEB URL</label>
+          <input  required name="sourceUrl" type="text" placeholder="Hir könne sie ihe website verlinken" />
+          <label>Bild URL</label>
+          <input  required name="image" type="text" />
+          <label>Herausgeber</label>
+          <input  required name="publisher" type="text" />
+          <label>Vorbereitungszeit</label>
+          <input  required name="cookingTime" type="number" />
+          <label>Portionen</label>
+          <input  required name="servings" type="number" />
         </div>
 
         <div class="upload__column">
-          <h3 class="upload__heading">Ingredients</h3>
-          <label>Ingredient 1</label>
+          <h3 class="upload__heading">Zutaten</h3>
+          <label>Zutaten 1</label>
           <input
-            value="0.5,kg,Rice"
+           
             type="text"
             required
             name="ingredient-1"
-            placeholder="Format: 'Quantity,Unit,Description'"
+            placeholder="Format: 'Menge,Einheit,Beschreibung'"
           />
-          <label>Ingredient 2</label>
+          <label>Zutaten 2</label>
           <input
-            value="1,,Avocado"
+           
             type="text"
             name="ingredient-2"
-            placeholder="Format: 'Quantity,Unit,Description'"
+            placeholder="Format: 'Menge,Einheit,Beschreibung'"
           />
-          <label>Ingredient 3</label>
+          <label>Zutaten 3</label>
           <input
-            value=",,salt"
+           
             type="text"
             name="ingredient-3"
-            placeholder="Format: 'Quantity,Unit,Description'"
+            placeholder="Format: 'Menge,Einheit,Beschreibung'"
           />
-          <label>Ingredient 4</label>
+          <label>Zutaten 4</label>
           <input
             type="text"
             name="ingredient-4"
-            placeholder="Format: 'Quantity,Unit,Description'"
+            placeholder="Format: 'Menge,Einheit,Beschreibung'"
           />
-          <label>Ingredient 5</label>
+          <label>Zutaten 5</label>
           <input
             type="text"
             name="ingredient-5"
-            placeholder="Format: 'Quantity,Unit,Description'"
+            placeholder="Format: 'Menge,Einheit,Beschreibung'"
           />
-          <label>Ingredient 6</label>
+          <label>Zutaten 6</label>
           <input
             type="text"
             name="ingredient-6"
-            placeholder="Format: 'Quantity,Unit,Description'"
+            placeholder="Format: 'Menge,Einheit,Beschreibung'"
           />
         </div>
 
@@ -325,9 +332,10 @@
           <svg>
             <use href="src/img/icons.svg#icon-upload-cloud"></use>
           </svg>
-          <span>Upload</span>
+          <span>Hochladen</span>
         </button>
       </form>
     </div>
+    
   </body>
 </html>
