@@ -181,9 +181,9 @@ recipeView.addHandlerAddBookmark(controlAddBookmark)
 searchView.addHandlerSearch(controlSearchResult)
 paginationView.addHandlerClick(controlpagination)
 addRecipeView.addHandlerUploade(controladdRecipe)
-
 }
 
 init()
+
 
 
