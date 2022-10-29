@@ -7,7 +7,7 @@ import icons from 'url:../../img/icons.svg'
 class addRecipeView extends View{
    
    _parentElement=document.querySelector('.upload');
-_message='Recipe added successfully'
+_message='Rezept erfolgreich hinzugefügt'
  _window=document.querySelector('.add-recipe-window')
 _overlay=document.querySelector('.overlay');
 _btnOpen=document.querySelector('.nav__bt--add-recipe');
@@ -53,9 +53,5 @@ handler(data)
       }) }
 
 
-_generateMarkup() {
-    
-
-}
 }
 export default new addRecipeView()

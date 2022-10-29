@@ -60,7 +60,8 @@
                       </svg>
                     </div>
                     <p>
-                      Noch keine Lesezeichen. Finden Sie ein schönes Rezept und setzen Sie ein Lesezeichen :)
+                      Noch keine Lesezeichen. Finden Sie ein schönes Rezept und
+                      setzen Sie ein Lesezeichen :)
                     </p>
                   </div>
 
@@ -84,7 +85,7 @@
         </nav>
       </header>
 
-      <div class="search-results">       
+      <div class="search-results">
         <ul class="results">
           <div class="message">
             <div>
@@ -148,7 +149,10 @@
               <use href="src/img/icons.svg#icon-smile"></use>
             </svg>
           </div>
-          <p>Beginnen Sie mit der Suche nach einem Rezept oder einer Zutat. Viel Spaß!</p>
+          <p>
+            Beginnen Sie mit der Suche nach einem Rezept oder einer Zutat. Viel
+            Spaß!
+          </p>
         </div>
 
         <!-- <div class="spinner">
@@ -271,39 +275,54 @@
         <div class="upload__column">
           <h3 class="upload__heading">Rezeptdaten</h3>
           <label>Title</label>
-          <input  required name="title" type="text" />
+          <input required name="title" type="text" value="Pizza" />
           <label>WEB URL</label>
-          <input  required name="sourceUrl" type="text" placeholder="Hir könne sie ihe website verlinken" />
+          <input
+            required
+            name="sourceUrl"
+            type="text"
+            value="zzzzzzzzzzzzzzzzzzzzz"
+            placeholder="Hir könne sie ihe website verlinken"
+          />
           <label>Bild URL</label>
-          <input  required name="image" type="text" />
+          <input
+            required
+            name="image"
+            value="https://images.unsplash.com/photo-1593246049226-ded77bf90326?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDg4MDd8MHwxfHNlYXJjaHwxOXx8cGl6emF8ZW58MHx8fHwxNjU5MjU4MDkx&ixlib=rb-1.2.1&q=80&w=1080"
+            type="text"
+          />
           <label>Herausgeber</label>
-          <input  required name="publisher" type="text" />
+          <input
+            required
+            name="publisher"
+            type="text"
+            value="Lorenzo Rodorigo"
+          />
           <label>Vorbereitungszeit</label>
-          <input  required name="cookingTime" type="number" />
+          <input required name="cookingTime" type="number" value="4" />
           <label>Portionen</label>
-          <input  required name="servings" type="number" />
+          <input required name="servings" type="number" value="4" />
         </div>
 
         <div class="upload__column">
           <h3 class="upload__heading">Zutaten</h3>
           <label>Zutaten 1</label>
           <input
-           
             type="text"
+            value="1,,Paprika"
             required
             name="ingredient-1"
             placeholder="Format: 'Menge,Einheit,Beschreibung'"
           />
           <label>Zutaten 2</label>
           <input
-           
             type="text"
+            value="1,,Paprika"
             name="ingredient-2"
             placeholder="Format: 'Menge,Einheit,Beschreibung'"
           />
           <label>Zutaten 3</label>
           <input
-           
             type="text"
             name="ingredient-3"
             placeholder="Format: 'Menge,Einheit,Beschreibung'"
@@ -336,6 +355,5 @@
         </button>
       </form>
     </div>
-    
   </body>
 </html>

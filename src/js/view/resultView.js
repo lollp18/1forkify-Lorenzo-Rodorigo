@@ -5,7 +5,7 @@ import icons from 'url:../../img/icons.svg'
 class resultView extends View{
 
 _parentElement=document.querySelector('.results');
-_errorMessage='No recipes found for your query! Please try again'
+_errorMessage='Keine Rezepte für Ihre Anfrage gefunden! Bitte versuchen Sie es erneut'
 _message=''
 
 _generateMarkup(){
